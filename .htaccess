@@ -1,0 +1,18 @@
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresDefault "access plus 6 hour"
+  ExpiresByType image/jpeg "access plus 7 day"
+  ExpiresByType image/gif "access plus 7 day"
+  ExpiresByType image/png "access plus 7 day"
+  ExpiresByType image/x-icon "access plus 7 day"
+  ExpiresByType text/css "access plus 6 hour"
+  ExpiresByType application/javascript "access plus 6 hour"
+  ExpiresByType application/x-javascript "access plus 6 hour"
+  ExpiresByType application/x-shockwave-flash "access plus 6 hour"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    <filesMatch "\.(js|css|html|php|jpg|jpeg|png|gif|svg)$">
+        SetOutputFilter DEFLATE
+    </filesMatch>
+</IfModule>
