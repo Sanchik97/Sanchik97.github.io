@@ -9,18 +9,17 @@
 		<link rel="stylesheet" href="css/square_menu.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	
 	<body class="body">
 		
 		<header id="header-section" class="header-section">
-			<div class=header-bg>
-				<video class="header-video" width="100%" height="auto" preload="auto" autoplay="autoplay"
-					loop="loop" poster="bg/daisy-stock-poster.jpg">
-					<source src="pexels.mp4" type="video/mp4"></source>
-					<source src="pexels.mp4"></source>
-				</video>
+			<div class="header-bg">
+				<div class="header-video" style="position: fixed;top:0;bottom:0;right:0;left: 0; z-index: -99;"
+					data-vide-bg="pexels"
+					data-vide-options="loop: true, muted: true">
+				</div>
 			</div>
 			<div class="sidemenu">
 				<nav class="left ">
@@ -50,12 +49,11 @@
 				</div>
 			</div>
 		</header>
-
 		<style type="text/css"></style>
 		<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="#"></a></p></div>
-
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.square_menu.js"></script>
+		<script src="js/jquery.vide.js"></script>
 		<script src="js/circle-progress.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/main.js"></script>
